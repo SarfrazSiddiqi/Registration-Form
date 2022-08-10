@@ -103,11 +103,11 @@ let tnc =document.getElementById('tnc').checked
 		document.getElementById('zip').value = "";
 		document.getElementById('tnc').checked = false
 
-		// document.getElementById('first-name-valid').style.display = 'none'
-		// document.getElementById('last-name-valid').style.display = 'none'
-		// document.getElementById("email-valid").style.display = "none"
-		// document.getElementById("city-valid").style.display = "none";
-		// document.getElementById("zip-valid").style.display = "none";
-		// document.getElementById('state-valid').style.display = "none";
+		document.getElementById('first-name-valid').style.display = 'none'
+		document.getElementById('last-name-valid').style.display = 'none'
+		document.getElementById("email-valid").style.display = "none"
+		document.getElementById("city-valid").style.display = "none";
+		document.getElementById("zip-valid").style.display = "none";
+		document.getElementById('state-valid').style.display = "none";
   }
 }
