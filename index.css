@@ -1,11 +1,13 @@
 .container {
     margin-top: 30px;
-
+    background: linear-gradient(90deg, #dbcacd 0%, #d1d3df 100%);
 }
 
-.background {
-    background: linear-gradient(90deg, #FC466B 0%, #737eb3 100%);
-}
+/* }
+
+.background { */
+
+
 
 .registration-form {
     width: 800px;
@@ -26,4 +28,11 @@
 
 .invalid-feedback {
     display: block;
+    font-size: medium;
+}
+
+@media (max-width:470px) {
+    #submit-form {
+        margin-left: -380px;
+    }
 }

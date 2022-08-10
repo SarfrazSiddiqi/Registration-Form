@@ -1,3 +1,5 @@
+
+
 function validate(){
 let firstName =document.getElementById('first-name').value
 let lastName =document.getElementById('last-name').value
@@ -31,7 +33,7 @@ let tnc =document.getElementById('tnc').checked
     document.getElementById('last-name-valid').style.display='none'
     error= true
   }
-  console.log(email)
+  // console.log(email)
 
   if(email && email.includes('@') && email.includes('.')
    && email.lastIndexOf('.')<=email.length-3
@@ -61,8 +63,8 @@ let tnc =document.getElementById('tnc').checked
   // console.log(!isNaN(parseInt(zip)))
 
   // if(zip && zip.length===6 && !isNaN(parseInt(zip))){
-  if(zip && zip.length===6 && parseInt(zip)){
-    document.getElementById('zip-valid').style.display='block'
+  if(zip.length===6){
+     document.getElementById('zip-valid').style.display='block'
     document.getElementById('zip-invalid').style.display='none'
     
   }
@@ -91,20 +93,21 @@ let tnc =document.getElementById('tnc').checked
     error= true
   }
   if(!error) {
-		alert('Your details have been saved successfully!')
-		document.getElementById('first-name').value = ''
-		document.getElementById('last-name').value = ''
-		document.getElementById('email').value = ''
-		document.getElementById('city').value = ''
+		alert('Your details have been saved successfully!');
+  
+		document.getElementById('first-name').value ="";
+		document.getElementById('last-name').value = "";
+		document.getElementById('email').value = "";
+		document.getElementById('city').value = "";
 		document.getElementById('state').value = 'None'
-		document.getElementById('zip').value = ''
+		document.getElementById('zip').value = "";
 		document.getElementById('tnc').checked = false
 
-		document.getElementById('first-name-valid').style.display = 'none'
-		document.getElementById('last-name-valid').style.display = 'none'
-		document.getElementById("email-valid").style.display = "none"
-		document.getElementById("city-valid").style.display = "none";
-		document.getElementById("zip-valid").style.display = "none";
-		document.getElementById('state-valid').style.display = "none";
-	}
+		// document.getElementById('first-name-valid').style.display = 'none'
+		// document.getElementById('last-name-valid').style.display = 'none'
+		// document.getElementById("email-valid").style.display = "none"
+		// document.getElementById("city-valid").style.display = "none";
+		// document.getElementById("zip-valid").style.display = "none";
+		// document.getElementById('state-valid').style.display = "none";
+  }
 }

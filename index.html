@@ -11,7 +11,7 @@
   <link href="index.css" rel="stylesheet">
 </head>
 
-<body class="background">
+<body>
   <div class="container">
     <h1 class="display-3 title">Registration Form</h1>
     <form class="row g-3 registration-form">
@@ -108,7 +108,7 @@
       </div>
       <div class="col-md-3">
         <label for="zip" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="zip" autocomplete="off">
+        <input type="number" class="form-control" id="zip" autocomplete="off">
         <div class="valid-feedback" id="zip-valid">
           Looks good!
         </div>
@@ -128,7 +128,7 @@
         </div>
       </div>
       <div class="col-12 submit-btn">
-        <button class="btn btn-dark btn-lg" type="button" onclick="validate()">Submit form</button>
+        <button class="btn btn-dark btn-lg" id="submit-form" type="button" onclick="validate()">Submit form</button>
       </div>
     </form>
   </div>
