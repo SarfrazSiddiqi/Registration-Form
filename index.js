@@ -1,25 +1,25 @@
 
 
 function validate(){
-let firstName =document.getElementById('first-name').value
-let lastName =document.getElementById('last-name').value
-let email =document.getElementById('email').value
-let city =document.getElementById('city').value
-let zip =document.getElementById('zip').value
-let state =document.getElementById('state').value
-let tnc =document.getElementById('tnc').checked
+let firstName = document.getElementById("first-name").value
+let lastName = document.getElementById("last-name").value
+let email = document.getElementById('email').value
+let city = document.getElementById('city').value
+let zip = document.getElementById('zip').value
+let state = document.getElementById('state').value
+let tnc = document.getElementById('tnc').checked
 
      
   let error = false
 
   if(firstName.length >=1){
-    document.getElementById('first-name-valid').style.display='block'
-    document.getElementById('first-name-invalid').style.display='none'
+    document.getElementById("first-name-valid").style.display="block"
+    document.getElementById("first-name-invalid").style.display="none"
     
   }
   else{
-    document.getElementById('first-name-invalid').style.display='block'
-    document.getElementById('first-name-valid').style.display='none'
+    document.getElementById('first-name-invalid').style.display="block"
+    document.getElementById("first-name-valid").style.display="none"
     error= true
   }
 
@@ -93,21 +93,24 @@ let tnc =document.getElementById('tnc').checked
     error= true
   }
   if(!error) {
-		alert('Your details have been saved successfully!');
-  
-		document.getElementById('first-name').value ="";
-		document.getElementById('last-name').value = "";
-		document.getElementById('email').value = "";
-		document.getElementById('city').value = "";
-		document.getElementById('state').value = 'None'
-		document.getElementById('zip').value = "";
-		document.getElementById('tnc').checked = false
-
-		document.getElementById('first-name-valid').style.display = 'none'
-		document.getElementById('last-name-valid').style.display = 'none'
-		document.getElementById("email-valid").style.display = "none"
-		document.getElementById("city-valid").style.display = "none";
-		document.getElementById("zip-valid").style.display = "none";
-		document.getElementById('state-valid').style.display = "none";
+		alert('Your details have been saved successfully!')
   }
+  resetValidateField()
+}
+
+const resetValidateField =()=> {
+  document.getElementById('first-name').value =""
+  document.getElementById('last-name').value = ""
+  document.getElementById('email').value = ""
+  document.getElementById('city').value = ""
+  document.getElementById('state').value = 'none'
+  document.getElementById('zip').value = ""
+  document.getElementById('tnc').checked = false
+
+  document.getElementById('first-name-valid').style.display = 'none'
+  document.getElementById('last-name-valid').style.display = 'none'
+  document.getElementById("email-valid").style.display = "none"
+  document.getElementById("city-valid").style.display = "none";
+  document.getElementById("zip-valid").style.display = "none";
+  document.getElementById('state-valid').style.display = "none";
 }

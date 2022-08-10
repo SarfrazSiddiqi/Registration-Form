@@ -1,38 +1,28 @@
-.container {
-    margin-top: 30px;
-    background: linear-gradient(90deg, #e0c7cc 0%, #aab2db 100%);
-}
+ .container {
+     margin-top: 30px;
+     background: linear-gradient(90deg, #e0c7cc 0%, #aab2db 100%);
+ }
 
-/* }
+ .registration-form {
+     width: 800px;
+     margin: 10px auto;
+ }
 
-.background { */
+ .title {
+     text-align: center;
+ }
 
+ .submit-btn {
+     text-align: center;
+ }
 
+ .invalid-feedback {
 
-.registration-form {
-    width: 800px;
-    margin: 10px auto;
-}
+     font-size: medium;
+ }
 
-.title {
-    text-align: center;
-}
-
-.submit-btn {
-    text-align: center;
-}
-
-.valid-feedback {
-    display: block;
-}
-
-.invalid-feedback {
-    display: block;
-    font-size: medium;
-}
-
-@media (max-width:470px) {
-    #submit-form {
-        margin-left: -380px;
-    }
-}
+ @media (max-width:470px) {
+     #submit-form {
+         margin-left: -380px;
+     }
+ }
