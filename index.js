@@ -12,7 +12,7 @@ let tnc = document.getElementById('tnc').checked
      
   let error = false
 
-  if(firstName.length >=1){
+  if(firstName.length >=3){
     document.getElementById("first-name-valid").style.display="block"
     document.getElementById("first-name-invalid").style.display="none"
     
